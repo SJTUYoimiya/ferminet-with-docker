@@ -32,8 +32,9 @@ RUN dpkg -i /root/cuda-keyring_1.1-1_all.deb && \
 
 # install miniconda
 RUN mkdir /root/miniconda3 && \
-    bash /root/miniconda.sh -b -u -p /root/miniconda3 && \
-    rm -rf /root/miniconda.sh && \
+    wget https://repo.anaconda.com/miniconda/Miniconda3-latest-Linux-x86_64.sh -O /root/miniconda3/miniconda.sh && \
+    bash /root/miniconda3/miniconda.sh -b -u -p /root/miniconda3 && \
+    rm -rf /root/miniconda3/miniconda.sh && \
     source /root/miniconda3/bin/activate && \
     conda init --all
 
