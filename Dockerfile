@@ -43,6 +43,7 @@ ENV PATH="/root/miniconda3/bin:$PATH"
 RUN conda create -n ferminet python=3.11 -y && \
     conda run -n ferminet pip install -e /root/ferminet && \
     conda run -n ferminet pip install /root/kfac-jax && \
-    conda run -n ferminet pip install -e /root/ferminet'[testing]'
+    conda run -n ferminet pip install -e /root/ferminet'[testing]' && \
+    conda run -n base conda install numpy scipy matplotlib pandas openpyxl seaborn scikit-learn -y
 
 ENTRYPOINT [ "/bin/zsh" ]
