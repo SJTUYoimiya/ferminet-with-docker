@@ -29,6 +29,8 @@ Date:   Fri Oct 25 10:34:33 2024 -0700
 
 ## 使用方式
 
+在配置前，请确保已经安装了 Docker 和 NVIDIA Container Toolkit，安装方式请参考官方教程或[本人 blog 记录](https://sjtuyoimiya.github.io/tech/docker-engine-部署/)
+
 将本仓库克隆到本地后，在此仓库目录路径下运行以下命令构建 Docker 镜像
 
 ```shell
