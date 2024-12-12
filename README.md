@@ -25,6 +25,8 @@ Date:   Fri Oct 25 10:34:33 2024 -0700
 
 本仓库是在 DeepMind FermiNet 的基础上，将 `kfac_jax` 库的版本降级到此 commit 之前的版本，以解决库版本冲突的问题，同时将 FermiNet 部署在 Docker 中，以隔离运行环境.
 
+> ⚠️ **注意**：在安装 `ferminet` 前，请务必检查 [`setup.py`](./ferminet/setup.py) 文件的 `REQUIRED_PACKAGES ` 字段中 `jax` 版本是否与系统环境匹配
+
 ## 使用方式
 
 将本仓库克隆到本地后，在此仓库目录路径下运行以下命令构建 Docker 镜像
