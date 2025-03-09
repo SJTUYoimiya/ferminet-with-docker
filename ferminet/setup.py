@@ -25,7 +25,7 @@ REQUIRED_PACKAGES = [
     'chex',
     'h5py',
     'folx @ git+https://github.com/microsoft/folx',
-    'jax[cuda12_local]==0.4.34',
+    'jax[cuda12]==0.4.34',
     'ml-collections',
     'optax',
     'numpy',

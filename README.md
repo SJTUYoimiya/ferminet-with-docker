@@ -1,3 +1,7 @@
+DeepMind 已在新的repo中修复了此问题，因此本仓库不再维护
+
+---
+
 # [Google DeepMind FermiNet](https://github.com/google-deepmind/ferminet) 在 Docker 中的部署实现
 
 由于 DeepMind 在优化器库 [`kfac_jax`](https://github.com/google-deepmind/kfac-jax) 库在 2024/10/25 10:34:33 的 commit `5a97d14a4429310caef1add6898122a66d87ee17` 中添加了 `sharding` 参数，导致了库版本冲突的问题
